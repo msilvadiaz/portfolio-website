@@ -1,7 +1,6 @@
 export const about = {
-    name: "Your Name",
-    role: "Your Profession",
-    about: "A minimal, clean portfolio template built with Next.js. Perfect for developers who want a simple yet professional online presence without the complexity.",
+    name: "Martin Silva-Diaz",
+    role: "Engineering Undergraduate at the University of Waterloo",
     email: "your.email@example.com",
 };
 
@@ -26,9 +25,9 @@ export const skills = [
 
 export const socials = {
     github: "https://github.com/sachinbhujel",
-    twitter: "https://twitter.com/sachinbhujel909",
-    instagram: "https://www.instagram.com/imsachinbhujel",
-    facebook: "https://www.facebook.com/imsachinbhujel",
+    linkedin:"https://www.linkedin.com/in/martinsilvadiaz/",
+    email: "martin.eduardo.silva.diaz@gmail.com",
+    resume: "/Resume_Martin_Silva-Diaz.pdf",
 };
 
 export const projects = {
@@ -82,21 +81,21 @@ export const projects = {
 
 export const experience = [
     {
-        title: "Frontend Developer at Tech Solutions",
+        title: "Business Administrator Intern at Scotiabank",
         description:
-            "Worked on building and maintaining responsive web applications using React.js and Next.js, improving UI performance and user experience.",
+            "Supported operational tasks & monitored trade activity for Scotia Wealth Management.",
         date: "15/01/2024",
     },
     {
-        title: "Web Developer Intern at Creative Studio",
+        title: "Autonomy Software Developer at Waterloo Aerial Robotics Group",
         description:
-            "Assisted in designing website layouts, wrote clean HTML/CSS code, and collaborated with the team on JavaScript features for client projects.",
+            "Designed and implemented autonomous parameter verification for drone systems.",
         date: "10/06/2023",
     },
     {
-        title: "Junior Developer at Innovate Labs",
+        title: "Product Compliance Intern at IPEX by Aliaxis",
         description:
-            "Developed and tested frontend components, optimized web pages for speed, and contributed to team code reviews and debugging sessions.",
+            "Developed documentation for quality assurance of manufactured products across Canada.",
         date: "01/09/2022",
     },
 ];
