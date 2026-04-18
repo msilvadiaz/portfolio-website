@@ -18,7 +18,7 @@ export default function Experience() {
                                     <img
                                         src={item.logo}
                                         alt={item.logoAlt}
-                                        className="w-16 h-16 rounded-md object-contain bg-base-100 p-1 border border-base-content/15 shrink-0"
+                                        className="w-16 h-16 rounded-md object-contain bg-base-100 p-1 border border-black shrink-0"
                                     />
 
                                     <div className="flex flex-col">
