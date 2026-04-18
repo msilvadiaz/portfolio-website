@@ -56,4 +56,6 @@ html, body {
 
 .section-heading {
   font-family: "Segoe Script", "Lucida Handwriting", cursive;
+  font-size: 1.45rem;
+  line-height: 1.25;
 }

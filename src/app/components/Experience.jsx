@@ -10,15 +10,15 @@ export default function Experience() {
                         {experience.map((item, index) => (
                             <li
                                 key={index}
-                                className="relative -ms-1.5 flex items-center gap-4"
+                                className="relative -ms-1.5 flex items-start gap-4"
                             >
                                 <span className="size-3 shrink-0 rounded-full bg-base-content"></span>
 
-                                <div className="flex items-center gap-3">
+                                <div className="flex items-start gap-3">
                                     <img
                                         src={item.logo}
                                         alt={item.logoAlt}
-                                        className="w-10 h-10 rounded-md object-contain bg-base-100 p-1 border border-base-content/15"
+                                        className="w-16 h-16 rounded-md object-contain bg-base-100 p-1 border border-base-content/15 shrink-0"
                                     />
 
                                     <div className="flex flex-col">
@@ -28,6 +28,10 @@ export default function Experience() {
 
                                         <p className="text-base font-semibold text-base-content">
                                             {item.role} • {item.company}
+                                        </p>
+
+                                        <p className="mt-1 text-sm text-base-content/80 max-w-[52ch]">
+                                            {item.description}
                                         </p>
                                     </div>
                                 </div>
