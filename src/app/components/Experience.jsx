@@ -15,11 +15,13 @@ export default function Experience() {
                                 <span className="size-3 shrink-0 rounded-full bg-base-content"></span>
 
                                 <div className="flex items-start gap-3">
-                                    <img
-                                        src={item.logo}
-                                        alt={item.logoAlt}
-                                        className="w-16 h-16 rounded-md object-contain bg-base-100 p-1 border border-black shrink-0"
-                                    />
+                                    <div className="shrink-0 rounded-2xl border-2 border-base-content/20 p-1">
+                                        <img
+                                            src={item.logo}
+                                            alt={item.logoAlt}
+                                            className="w-16 h-16 rounded-md object-contain bg-base-100 p-1 border border-black"
+                                        />
+                                    </div>
 
                                     <div className="flex flex-col">
                                         <time className="text-xs font-medium text-base-content/80">
