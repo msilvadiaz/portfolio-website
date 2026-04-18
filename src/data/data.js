@@ -33,50 +33,28 @@ export const socials = {
 export const projects = {
     pinProjects: [
         {
-            title: "Project 1",
+            title: "Stock Portfolio Analysis Tool",
             description:
-                "A sleek, modern portfolio site to showcase your work and skills. Responsive design with smooth navigation and SEO optimization.",
-            tags: ["CSS", "React Js"],
+                "Developed a full-stack portfolio analysis platform that tracks customized portfolios, visualizes performance, computes the efficient frontier and recommends allocations based on risk preferences.",
+            tags: ["React", "TypeScript", "Python Flask"],
             link: "",
         },
         {
-            title: "Project 2",
+            title: "Financial Budgeting & Planning Tool",
             description:
-                "A clean, minimal blog setup featuring dynamic content, category filters, and easy-to-read layouts. Perfect for sharing your ideas.",
-            tags: ["CSS", "React Js"],
+                "Developed an Excel VBA budgeting tool that automates expense tracking and visualization, incorporates real-time data validation for reliable calculations.",
+            tags: ["VBA", "Excel"],
             link: "",
         },
         {
-            title: "Project 3",
+            title: "Project three",
             description:
                 "A fast and scalable online store with product listings, cart functionality, and seamless checkout experience. Built for performance.",
             tags: ["CSS", "React Js"],
             link: "",
         },
     ],
-    otherProjects: [
-        {
-            title: "Project 4",
-            description:
-                "A sleek, modern portfolio site to showcase your work and skills. Responsive design with smooth navigation and SEO optimization.",
-            tags: ["CSS", "React Js"],
-            link: "",
-        },
-        {
-            title: "Project 5",
-            description:
-                "A clean, minimal blog setup featuring dynamic content, category filters, and easy-to-read layouts. Perfect for sharing your ideas.",
-            tags: ["CSS", "React Js"],
-            link: "",
-        },
-        {
-            title: "Project 6",
-            description:
-                "A fast and scalable online store with product listings, cart functionality, and seamless checkout experience. Built for performance.",
-            tags: ["CSS", "React Js"],
-            link: "",
-        },
-    ],
+    otherProjects: [],
 };
 
 export const experience = [
