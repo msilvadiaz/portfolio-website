@@ -7,10 +7,9 @@ export default function PageFade({ children }) {
     const pathname = usePathname();
 
     return (
-        <AnimatePresence initial={false} mode="wait">
+        <AnimatePresence mode="wait">
             <motion.div
                 key={pathname}
-                style={{ opacity: 0 }}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
