@@ -16,11 +16,13 @@ export default function Experience() {
 
                                 <div className="flex items-start gap-3">
                                     <div className="shrink-0 rounded-2xl border-2 border-base-content/20 p-1">
-                                        <img
-                                            src={item.logo}
-                                            alt={item.logoAlt}
-                                            className="w-16 h-16 rounded-md object-contain border-2 border-base-content/20 bg-base-100"
-                                        />
+                                        <div className="w-16 h-16 rounded-md border-2 border-base-content/20 bg-base-100 overflow-hidden">
+                                            <img
+                                                src={item.logo}
+                                                alt={item.logoAlt}
+                                                className="w-full h-full object-cover scale-110"
+                                            />
+                                        </div>
                                     </div>
 
                                     <div className="flex flex-col">
