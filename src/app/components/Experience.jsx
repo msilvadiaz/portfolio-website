@@ -1,45 +1,50 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { experience } from "../../data/data";
 
 export default function Experience() {
-    return (
-        <>
-            <div className="mt-10 scroll-mt-14" id="experience">
-                <h2 className="text-xl font-medium section-heading">Work Experience</h2>
-                <div className="mt-6">
-                    <ol className="relative space-y-8 before:absolute before:-ml-px before:h-full before:w-0.5 before:rounded-full before:bg-gray-200 dark:before:bg-gray-500 mt-4 p-2">
-                        {experience.map((item, index) => (
-                            <li
-                                key={index}
-                                className="relative -ms-1.5 flex items-start gap-4"
-                            >
-                                <span className="size-3 shrink-0 rounded-full bg-base-content"></span>
+  return (
+    <motion.div
+      className="mt-10 scroll-mt-14"
+      id="experience"
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.35, ease: "easeOut" }}
+    >
+      <h2 className="text-xl font-medium section-heading">Work Experience</h2>
+      <div className="mt-6">
+        <ol className="relative space-y-8 before:absolute before:-ml-px before:h-full before:w-0.5 before:rounded-full before:bg-gray-200 dark:before:bg-gray-500 mt-4 p-2">
+          {experience.map((item, index) => (
+            <li key={index} className="relative -ms-1.5 flex items-start gap-4">
+              <span className="size-3 shrink-0 rounded-full bg-base-content"></span>
 
-                                <div className="flex items-start gap-3">
-                                    <img
-                                        src={item.logo}
-                                        alt={item.logoAlt}
-                                        className="w-16 h-16 rounded-md object-contain bg-base-100 p-1 border border-base-content/15 shrink-0"
-                                    />
+              <div className="flex items-start gap-3">
+                <img
+                  src={item.logo}
+                  alt={item.logoAlt}
+                  className="w-16 h-16 rounded-md object-contain bg-base-100 p-1 border border-base-content/15 shrink-0"
+                />
 
-                                    <div className="flex flex-col">
-                                        <time className="text-xs font-medium text-base-content/80">
-                                            {item.date}
-                                        </time>
+                <div className="flex flex-col">
+                  <time className="text-xs font-medium text-base-content/80">
+                    {item.date}
+                  </time>
 
-                                        <p className="text-base font-semibold text-base-content">
-                                            {item.role} • {item.company}
-                                        </p>
+                  <p className="text-base font-semibold text-base-content">
+                    {item.role} • {item.company}
+                  </p>
 
-                                        <p className="mt-1 text-sm text-base-content/80 max-w-[52ch]">
-                                            {item.description}
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                        ))}
-                    </ol>
+                  <p className="mt-1 text-sm text-base-content/80 max-w-[52ch]">
+                    {item.description}
+                  </p>
                 </div>
-            </div>
-        </>
-    );
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </motion.div>
+  );
 }
