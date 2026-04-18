@@ -4,7 +4,7 @@ import { skills } from "@/data/data";
 export default function TechLists() {
     return (
         <div className="mt-10">
-             <h2 className="text-xl font-medium before:content-['>'] before:mr-1">Tech Stack</h2>
+             <h2 className="text-xl font-medium section-heading">Tech Stack</h2>
             <Marquee duration="10s">
                 <div className="flex gap-8 mt-4">
                     {[...skills, ...skills].map((skill, index) => (

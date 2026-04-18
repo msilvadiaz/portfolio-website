@@ -6,7 +6,7 @@ export default function ProjectsList() {
     return (
         <div className="mt-10 scroll-mt-14 flex flex-col gap-2" id="projects">
             <div className="flex items-end justify-between">
-                <h2 className="text-xl font-medium before:content-['>'] before:mr-1">
+                <h2 className="text-xl font-medium section-heading">
                     Projects
                 </h2>
                 <Link href="/projects" className="text-sm flex underline hover:text-base-content/80">

@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
       <div className="flex flex-col gap-2 mt-10 scroll-mt-14" id="about">
-        <h2 className="text-xl font-medium before:content-['>'] before:mr-1">
+        <h2 className="text-xl font-medium section-heading">
           About
         </h2>
 
