@@ -48,6 +48,33 @@ html, body {
    font-family: "Segoe UI", "Candara", "Trebuchet MS", sans-serif;
 }
 
+[data-theme="light"] {
+  --color-base-100: #d6d3c6;
+  --color-base-200: #d0ccbe;
+  --color-base-300: #c9c4b5;
+}
+
+html[data-theme="light"],
+html[data-theme="light"] body {
+  background-color: #d6d3c6;
+  color: #171717;
+}
+
+[data-theme="dark"] {
+  --color-base-100: #000000;
+  --color-base-200: #000000;
+  --color-base-300: #0a0a0a;
+  --b1: 0 0% 0%;
+  --b2: 0 0% 0%;
+  --b3: 0 0% 4%;
+}
+
+html[data-theme="dark"],
+html[data-theme="dark"] body {
+  background-color: #000000;
+  color: #f5f5f5;
+}
+
 .name-title {
   font-family: "Segoe Script", "Lucida Handwriting", cursive;
   letter-spacing: 0.02em;
