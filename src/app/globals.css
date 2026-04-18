@@ -45,5 +45,10 @@ html, body {
   scrollbar-width: none; 
   -ms-overflow-style: none;
    scroll-behavior: smooth;
-   font-family: "Rethink Sans";
+   font-family: "Segoe UI", "Candara", "Trebuchet MS", sans-serif;
+}
+
+.name-title {
+  font-family: "Segoe Script", "Lucida Handwriting", cursive;
+  letter-spacing: 0.02em;
 }

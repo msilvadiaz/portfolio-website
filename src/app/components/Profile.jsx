@@ -5,7 +5,7 @@ export default function Profile() {
     return (
         <>
             <div className="flex gap-[5px] items-center mt-1">
-                <h1 className="text-3xl font-semibold">{about.name}</h1>
+                <h1 className="text-3xl font-semibold name-title">{about.name}</h1>
             </div>
             <div className="mt-1.5 flex items-center gap-1">
                 <p className="text-base text-base-content/60">{about.role}</p>
