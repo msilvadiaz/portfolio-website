@@ -14,18 +14,26 @@ export default function Experience() {
                             >
                                 <span className="size-3 shrink-0 rounded-full bg-base-content"></span>
 
-                                <div className="-mt-2">
-                                    <time className="text-xs font-medium text-base-content/80">
-                                        {item.date}
-                                    </time>
+                                <div className="-mt-2 flex items-start gap-3">
+                                    <img
+                                        src={item.logo}
+                                        alt={item.logoAlt}
+                                        className="w-10 h-10 rounded-md object-contain bg-base-100 p-1 border border-base-content/15"
+                                    />
 
-                                    <h3 className="text-lg font-semibold text-base-content">
-                                        {item.title}
-                                    </h3>
+                                    <div>
+                                        <time className="text-xs font-medium text-base-content/80">
+                                            {item.date}
+                                        </time>
 
-                                    <p className="mt-0.5 text-sm text-base-content/80">
-                                        {item.description}
-                                    </p>
+                                        <h3 className="text-lg font-semibold text-base-content">
+                                            {item.title}
+                                        </h3>
+
+                                        <p className="mt-0.5 text-sm text-base-content/80">
+                                            {item.description}
+                                        </p>
+                                    </div>
                                 </div>
                             </li>
                         ))}

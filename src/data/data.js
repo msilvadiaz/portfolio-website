@@ -85,18 +85,24 @@ export const experience = [
         description:
             "Supported operational tasks & monitored trade activity for Scotia Wealth Management.",
         date: "15/01/2024",
+        logo: "/scotiabank.png",
+        logoAlt: "Scotiabank logo",
     },
     {
         title: "Autonomy Software Developer at Waterloo Aerial Robotics Group",
         description:
             "Designed and implemented autonomous parameter verification for drone systems.",
         date: "10/06/2023",
+        logo: "/WARG.png",
+        logoAlt: "Waterloo Aerial Robotics Group logo",
     },
     {
         title: "Product Compliance Intern at IPEX by Aliaxis",
         description:
             "Developed documentation for quality assurance of manufactured products across Canada.",
         date: "01/09/2022",
+        logo: "/IPEX.png",
+        logoAlt: "IPEX logo",
     },
 ];
 
