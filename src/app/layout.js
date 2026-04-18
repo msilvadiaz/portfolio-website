@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import { seo } from "@/data/data";
 import Footer from "./components/Footer";
+import PageFade from "./components/PageFade";
 
 export const metadata = {
     title: `${seo.title}`,
@@ -25,7 +26,7 @@ export default function RootLayout({ children }) {
             <body className={`antialiased overflow-auto`}>
                 <div className="w-[100%] md:w-[700px] m-auto">
                     <Navbar />
-                    {children}
+                    <PageFade>{children}</PageFade>
                     <Footer />
                 </div>
             </body>
