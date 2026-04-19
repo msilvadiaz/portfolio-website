@@ -41,11 +41,20 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/*
+  Use a Segoe-first stack that normalizes naming differences across OS/browser engines.
+  This keeps typography as close as possible to Segoe on every device.
+*/
+:root {
+  --font-segoe-sans: "Segoe UI Variable Text", "Segoe UI Variable", "Segoe UI", "SegoeUI", "Selawik", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-segoe-script: "Segoe Script", "Segoe Print", "Snell Roundhand", "Lucida Handwriting", cursive;
+}
+
 html, body {
   scrollbar-width: none; 
   -ms-overflow-style: none;
-   scroll-behavior: smooth;
-   font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  scroll-behavior: smooth;
+  font-family: var(--font-segoe-sans);
 }
 
 [data-theme="light"] {
@@ -76,13 +85,13 @@ html[data-theme="dark"] body {
 }
 
 .name-title {
-  font-family: "Segoe Script", "Lucida Handwriting", cursive;
+  font-family: var(--font-segoe-script);
   letter-spacing: 0.02em;
 }
 
 
 .section-heading {
-  font-family: "Segoe Script", "Lucida Handwriting", cursive;
+  font-family: var(--font-segoe-script);
   font-size: 1.45rem;
   line-height: 1.25;
 }
