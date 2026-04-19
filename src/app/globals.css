@@ -61,13 +61,13 @@ html[data-theme="dark"] body {
 }
 
 .name-title {
-  font-family: var(--font-heading-script), "Segoe UI", sans-serif;
+  font-family: var(--font-heading-script), var(--font-body);
   letter-spacing: 0.02em;
 }
 
 
 .section-heading {
-  font-family: var(--font-heading-script), "Segoe UI", sans-serif;
+  font-family: var(--font-heading-script), var(--font-body);
   font-size: 1.45rem;
   line-height: 1.25;
 }

@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import { seo } from "@/data/data";
 import PageTransition from "./components/PageTransition";
 import Footer from "./components/Footer";
-import { Dancing_Script, Inter } from "next/font/google";
+import { Caveat, Inter } from "next/font/google";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -12,7 +12,7 @@ const inter = Inter({
     preload: true,
 });
 
-const dancingScript = Dancing_Script({
+const caveat = Caveat({
     subsets: ["latin"],
     variable: "--font-script",
     display: "swap",
@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
             <head>
                 <link rel="icon" href="/favicon.ico" />
             </head>
-            <body className={`${inter.variable} ${dancingScript.variable} antialiased overflow-auto`}>
+            <body className={`${inter.variable} ${caveat.variable} antialiased overflow-auto`}>
                 <PageTransition>
                     <div className="w-[100%] md:w-[700px] m-auto">
                         <Navbar />
