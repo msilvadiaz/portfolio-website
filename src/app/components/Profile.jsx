@@ -14,7 +14,12 @@ export default function Profile() {
             </div>
 
             <div className="flex items-center mt-3 gap-3">
-                <a href={socials.linkedin} target="_blank" rel="noopener noreferrer">
+                <a
+                    href={socials.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-md p-1 transition-transform duration-200 hover:scale-110 hover:text-base-content/70"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
@@ -33,7 +38,12 @@ export default function Profile() {
                     </svg>
                 </a>
 
-                <a href={socials.github} target="_blank" rel="noopener noreferrer">
+                <a
+                    href={socials.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-md p-1 transition-transform duration-200 hover:scale-110 hover:text-base-content/70"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
@@ -51,7 +61,10 @@ export default function Profile() {
                     </svg>
                 </a>
 
-                <a href={`mailto:${socials.email}`}>
+                <a
+                    href={`mailto:${socials.email}`}
+                    className="rounded-md p-1 transition-transform duration-200 hover:scale-110 hover:text-base-content/70"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
@@ -69,7 +82,12 @@ export default function Profile() {
                     </svg>
                 </a>
 
-                <a href={socials.resume} target="_blank" rel="noopener noreferrer">
+                <a
+                    href={socials.resume}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-md p-1 transition-transform duration-200 hover:scale-110 hover:text-base-content/70"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
