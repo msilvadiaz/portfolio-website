@@ -22,28 +22,27 @@ export default function Navbar() {
         }
     }, []);
 
-    const handleThemeChange = (checked) => {
-        const newTheme = checked ? "dark" : "light";
-        setIsDark(checked);
+    const handleThemeChange = () => {
+        const newTheme = isDark ? "light" : "dark";
+        setIsDark(!isDark);
         document.documentElement.setAttribute("data-theme", newTheme);
         localStorage.setItem("theme", newTheme);
     };
 
     return (
         <div className="sticky top-2 z-10 flex w-full justify-end px-4">
-            <div className="rounded-3xl border bg-gray-10/50 px-4 py-2 backdrop-blur-sm">
-                <label className="toggle text-base-content toggle-sm">
-                    <input
-                        type="checkbox"
-                        checked={isDark}
-                        onChange={(e) => handleThemeChange(e.target.checked)}
-                        className="theme-controller"
-                    />
-
+            <button
+                type="button"
+                aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
+                onClick={handleThemeChange}
+                className="group rounded-2xl border-2 border-base-content/20 bg-gray-10/50 p-2 backdrop-blur-sm transition-transform duration-200 hover:scale-102 hover:border-base-content/80"
+            >
+                {isDark ? (
                     <svg
-                        aria-label="sun"
+                        aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
+                        className="h-5 w-5 sm:h-6 sm:w-6"
                     >
                         <g
                             strokeLinejoin="round"
@@ -63,11 +62,12 @@ export default function Navbar() {
                             <path d="m19.07 4.93-1.41 1.41"></path>
                         </g>
                     </svg>
-
+                ) : (
                     <svg
-                        aria-label="moon"
+                        aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
+                        className="h-5 w-5 sm:h-6 sm:w-6"
                     >
                         <g
                             strokeLinejoin="round"
@@ -79,8 +79,8 @@ export default function Navbar() {
                             <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
                         </g>
                     </svg>
-                </label>
-            </div>
+                )}
+            </button>
         </div>
     );
 }
