@@ -37,14 +37,14 @@ export const projects = {
             description:
                 "Developed a full-stack portfolio analysis platform that tracks customized portfolios, visualizes performance, computes the efficient frontier and recommends allocations based on risk preferences.",
             tags: ["React", "TypeScript", "Python Flask"],
-            link: "",
+            link: "https://portfolio-metrics-analyzer.vercel.app/",
         },
         {
             title: "Financial Budgeting & Planning Tool",
             description:
                 "Developed an Excel VBA budgeting tool that automates expense tracking and visualization, incorporates real-time data validation for reliable calculations.",
             tags: ["VBA", "Excel"],
-            link: "",
+            link: "https://1drv.ms/x/c/97312058463c78a7/EZD8pGZI12dJu1apDoR1V9MBy-U9vMZ0jaTrpHZwkfI0WQ?e=WLXfC5",
         },
         {
             title: "Project three",
@@ -65,6 +65,7 @@ export const experience = [
         date: "15/01/2024",
         logo: "/scotiabank.png",
         logoAlt: "Scotiabank logo",
+        link: "https://www.scotiawealthmanagement.com/ca/en/about-us.html",
     },
     {
         role: "Autonomy Software Developer",
@@ -73,6 +74,7 @@ export const experience = [
         date: "10/06/2023",
         logo: "/WARG.png",
         logoAlt: "Waterloo Aerial Robotics Group logo",
+        link: "https://www.uwarg.com/",
     },
     {
         role: "Product Compliance Intern",
@@ -81,6 +83,7 @@ export const experience = [
         date: "01/09/2022",
         logo: "/IPEX.png",
         logoAlt: "IPEX logo",
+        link: "https://ipexna.com/",
     },
 ];
 
