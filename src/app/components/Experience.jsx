@@ -1,16 +1,10 @@
 "use client";
 
-import { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { experience } from "../../data/data";
 
 export default function Experience() {
-    const timelineRef = useRef(null);
-
-    const { scrollYProgress } = useScroll({
-        target: timelineRef,
-        offset: ["start 0.8", "end 0.2"],
-    });
+    const { scrollYProgress } = useScroll();
 
     const clampedProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
     const smoothProgress = useSpring(clampedProgress, {
@@ -24,10 +18,10 @@ export default function Experience() {
             <div className="mt-10 scroll-mt-14" id="experience">
                 <h2 className="text-xl font-medium section-heading">Experience</h2>
                 <div className="mt-6">
-                    <ol ref={timelineRef} className="relative mt-4 space-y-8 p-2">
-                        <div className="pointer-events-none absolute inset-y-0 left-2.5 w-0.5 rounded-full bg-gray-200 dark:bg-gray-500" />
+                    <ol className="relative mt-4 space-y-8 pl-8">
+                        <div className="pointer-events-none absolute inset-y-0 left-1.5 w-0.5 rounded-full bg-gray-200 dark:bg-gray-500" />
                         <motion.div
-                            className="pointer-events-none absolute inset-y-0 left-2.5 w-0.5 origin-top rounded-full bg-base-content"
+                            className="pointer-events-none absolute inset-y-0 left-1.5 w-0.5 origin-top rounded-full bg-base-content"
                             style={{ scaleY: smoothProgress }}
                         />
 
@@ -61,11 +55,14 @@ export default function Experience() {
                             );
 
                             return (
-                                <li
-                                    key={index}
-                                    className="relative -ms-1.5 flex items-start gap-4"
-                                >
-                                    <span className="relative z-10 size-3 shrink-0 rounded-full bg-base-content"></span>
+                                <li key={index} className="relative flex items-start gap-4">
+                                    <motion.span
+                                        className="absolute left-1.5 top-1 z-10 size-3 -translate-x-1/2 rounded-full bg-base-content"
+                                        initial={{ opacity: 0, scale: 0.5 }}
+                                        whileInView={{ opacity: 1, scale: 1 }}
+                                        viewport={{ once: true, amount: 0.4 }}
+                                        transition={{ duration: 0.25, ease: "easeOut" }}
+                                    />
 
                                     {item.link ? (
                                         <a
