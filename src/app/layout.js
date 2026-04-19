@@ -3,6 +3,22 @@ import Navbar from "./components/Navbar";
 import { seo } from "@/data/data";
 import PageTransition from "./components/PageTransition";
 import Footer from "./components/Footer";
+import { Dancing_Script, Inter } from "next/font/google";
+
+const inter = Inter({
+    subsets: ["latin"],
+    variable: "--font-sans",
+    display: "swap",
+    preload: true,
+});
+
+const dancingScript = Dancing_Script({
+    subsets: ["latin"],
+    variable: "--font-script",
+    display: "swap",
+    preload: true,
+    weight: ["500", "600", "700"],
+});
 
 export const metadata = {
     title: `${seo.title}`,
@@ -19,7 +35,7 @@ export default function RootLayout({ children }) {
             <head>
                 <link rel="icon" href="/favicon.ico" />
             </head>
-            <body className={`antialiased overflow-auto`}>
+            <body className={`${inter.variable} ${dancingScript.variable} antialiased overflow-auto`}>
                 <PageTransition>
                     <div className="w-[100%] md:w-[700px] m-auto">
                         <Navbar />
