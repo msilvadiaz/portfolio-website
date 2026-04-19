@@ -1,19 +1,29 @@
+import { socials } from "@/data/data";
+
+const contactLinks = [
+    { label: "LinkedIn", href: socials.linkedin },
+    { label: "GitHub", href: socials.github },
+    { label: "Mail", href: `mailto:${socials.email}` },
+    { label: "Resume", href: socials.resume },
+];
+
 export default function Footer() {
     return (
-        <>
-            <div className="mt-20 p-4">
-                <p className="text-sm">© 2025. All rights reserved.</p>
-                <p className="text-xs">
-                    This site uses{" "}
+        <footer className="mt-16 pb-8 px-4">
+            <hr className="border-base-content/20" />
+            <div className="pt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+                {contactLinks.map((contact) => (
                     <a
-                        href="https://github.com/sachinbhujel/NextJS-Portfolio-Template"
-                        target="_blank"
-                        className="text-sm font-medium hover:underline"
+                        key={contact.label}
+                        href={contact.href}
+                        target={contact.label === "Mail" ? undefined : "_blank"}
+                        rel={contact.label === "Mail" ? undefined : "noopener noreferrer"}
+                        className="hover:underline text-base-content/80"
                     >
-                        NextJS Portfolio Template
-                    </a>{" "}
-                </p>
+                        {contact.label}
+                    </a>
+                ))}
             </div>
-        </>
+        </footer>
     );
 }
