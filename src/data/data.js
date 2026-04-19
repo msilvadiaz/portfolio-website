@@ -37,14 +37,14 @@ export const projects = {
             description:
                 "Developed a full-stack portfolio analysis platform that tracks customized portfolios, visualizes performance, computes the efficient frontier and recommends allocations based on risk preferences.",
             tags: ["React", "TypeScript", "Python Flask"],
-            link: "",
+            link: "https://portfolio-metrics-analyzer.vercel.app/",
         },
         {
             title: "Financial Budgeting & Planning Tool",
             description:
                 "Developed an Excel VBA budgeting tool that automates expense tracking and visualization, incorporates real-time data validation for reliable calculations.",
             tags: ["VBA", "Excel"],
-            link: "",
+            link: "https://1drv.ms/x/c/97312058463c78a7/EZD8pGZI12dJu1apDoR1V9MBy-U9vMZ0jaTrpHZwkfI0WQ?e=WLXfC5",
         },
         {
             title: "Project three",
@@ -63,6 +63,7 @@ export const experience = [
         company: "Scotiabank",
         description: "Supported operational tasks and monitored trade activity for Scotia Wealth Management.",
         date: "15/01/2024",
+        link: "https://www.scotiawealthmanagement.com/ca/en/about-us.html",
         logo: "/scotiabank.png",
         logoAlt: "Scotiabank logo",
     },
@@ -71,6 +72,7 @@ export const experience = [
         company: "Waterloo Aerial Robotics Group",
         description: "Built autonomous parameter verification features for drone systems and reliability testing.",
         date: "10/06/2023",
+        link: "https://www.uwarg.com/",
         logo: "/WARG.png",
         logoAlt: "Waterloo Aerial Robotics Group logo",
     },
@@ -79,6 +81,7 @@ export const experience = [
         company: "IPEX by Aliaxis",
         description: "Developed compliance documentation to support quality assurance for products distributed across Canada.",
         date: "01/09/2022",
+        link: "https://ipexna.com/",
         logo: "/IPEX.png",
         logoAlt: "IPEX logo",
     },

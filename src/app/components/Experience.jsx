@@ -14,7 +14,12 @@ export default function Experience() {
                             >
                                 <span className="size-3 shrink-0 rounded-full bg-base-content"></span>
 
-                                <div className="flex items-start gap-3">
+                                <a
+                                    href={item.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="group flex items-start gap-3 rounded-xl p-1 transition-colors hover:bg-base-content/5"
+                                >
                                     <div className="shrink-0 rounded-2xl border-2 border-base-content/20 p-1">
                                         <div className="w-16 h-16 rounded-md border-2 border-base-content/20 bg-base-100 overflow-hidden">
                                             <img
@@ -38,7 +43,7 @@ export default function Experience() {
                                             {item.description}
                                         </p>
                                     </div>
-                                </div>
+                                </a>
                             </li>
                         ))}
                     </ol>
