@@ -84,7 +84,7 @@ export default function Experience() {
                 <div className="mt-6">
                     <ol ref={timelineRef} className="relative mt-4 space-y-8">
                         <motion.div
-                            className="pointer-events-none absolute inset-y-0 left-1.5 w-0.5 origin-top rounded-full bg-base-content"
+                            className="pointer-events-none absolute inset-y-0 left-1.5 w-0.5 -translate-x-1/2 origin-top rounded-full bg-base-content"
                             style={{ scaleY: smoothProgress }}
                         />
 
