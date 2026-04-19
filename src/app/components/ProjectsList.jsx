@@ -1,6 +1,5 @@
 "use client";
 import { projects } from "@/data/data";
-import Link from "next/link";
 
 export default function ProjectsList() {
     return (
@@ -9,9 +8,6 @@ export default function ProjectsList() {
                 <h2 className="text-xl font-medium section-heading">
                     Projects
                 </h2>
-                <Link href="/projects" className="text-sm flex underline hover:text-base-content/80">
-                    See All
-                </Link>
             </div>
             <div className="flex flex-col gap-2">
                 {projects.pinProjects.map((item, index) => (

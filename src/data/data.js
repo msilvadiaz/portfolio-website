@@ -42,13 +42,6 @@ export const projects = {
             tags: ["VBA", "Excel"],
             link: "https://1drv.ms/x/c/97312058463c78a7/EZD8pGZI12dJu1apDoR1V9MBy-U9vMZ0jaTrpHZwkfI0WQ?e=WLXfC5",
         },
-        {
-            title: "Project three",
-            description:
-                "A fast and scalable online store with product listings, cart functionality, and seamless checkout experience. Built for performance.",
-            tags: ["CSS", "React Js"],
-            link: "",
-        },
     ],
     otherProjects: [],
 };
