@@ -1,9 +1,21 @@
 "use client";
 
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { useEffect, useMemo, useRef, useState } from "react";
+import {
+    motion,
+    useMotionValueEvent,
+    useScroll,
+    useSpring,
+    useTransform,
+} from "framer-motion";
 import { experience } from "../../data/data";
 
 export default function Experience() {
+    const timelineRef = useRef(null);
+    const itemRefs = useRef([]);
+    const [itemProgressPoints, setItemProgressPoints] = useState([]);
+    const [currentProgress, setCurrentProgress] = useState(0);
+
     const { scrollYProgress } = useScroll();
 
     const clampedProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
@@ -13,19 +25,73 @@ export default function Experience() {
         mass: 0.25,
     });
 
+    useMotionValueEvent(smoothProgress, "change", (latest) => {
+        setCurrentProgress(latest);
+    });
+
+    useEffect(() => {
+        const updateProgressPoints = () => {
+            const timeline = timelineRef.current;
+            if (!timeline) {
+                return;
+            }
+
+            const timelineHeight = timeline.clientHeight;
+            if (!timelineHeight) {
+                return;
+            }
+
+            const points = itemRefs.current.map((item) => {
+                if (!item) {
+                    return 1;
+                }
+
+                const itemTop = item.offsetTop;
+                const markerCenter = itemTop + 10;
+                return Math.min(Math.max(markerCenter / timelineHeight, 0), 1);
+            });
+
+            setItemProgressPoints(points);
+        };
+
+        updateProgressPoints();
+
+        const resizeObserver = new ResizeObserver(updateProgressPoints);
+        if (timelineRef.current) {
+            resizeObserver.observe(timelineRef.current);
+        }
+
+        window.addEventListener("resize", updateProgressPoints);
+
+        return () => {
+            resizeObserver.disconnect();
+            window.removeEventListener("resize", updateProgressPoints);
+        };
+    }, []);
+
+    const fallbackPoints = useMemo(() => {
+        if (experience.length <= 1) {
+            return [1];
+        }
+
+        return experience.map((_, index) => index / (experience.length - 1));
+    }, []);
+
     return (
         <>
             <div className="mt-10 scroll-mt-14" id="experience">
                 <h2 className="text-xl font-medium section-heading">Experience</h2>
                 <div className="mt-6">
-                    <ol className="relative mt-4 space-y-8 pl-8">
-                        <div className="pointer-events-none absolute inset-y-0 left-1.5 w-0.5 rounded-full bg-gray-200 dark:bg-gray-500" />
+                    <ol ref={timelineRef} className="relative mt-4 space-y-8">
                         <motion.div
                             className="pointer-events-none absolute inset-y-0 left-1.5 w-0.5 origin-top rounded-full bg-base-content"
                             style={{ scaleY: smoothProgress }}
                         />
 
                         {experience.map((item, index) => {
+                            const threshold = itemProgressPoints[index] ?? fallbackPoints[index] ?? 1;
+                            const isReached = currentProgress >= threshold;
+
                             const cardContent = (
                                 <div className="flex items-start gap-3">
                                     <div className="shrink-0 rounded-2xl border-2 border-base-content/20 p-1">
@@ -55,13 +121,17 @@ export default function Experience() {
                             );
 
                             return (
-                                <li key={index} className="relative flex items-start gap-4">
+                                <li
+                                    key={index}
+                                    ref={(el) => {
+                                        itemRefs.current[index] = el;
+                                    }}
+                                    className="relative flex items-start gap-4 pl-8"
+                                >
                                     <motion.span
                                         className="absolute left-1.5 top-1 z-10 size-3 -translate-x-1/2 rounded-full bg-base-content"
-                                        initial={{ opacity: 0, scale: 0.5 }}
-                                        whileInView={{ opacity: 1, scale: 1 }}
-                                        viewport={{ once: true, amount: 0.4 }}
-                                        transition={{ duration: 0.25, ease: "easeOut" }}
+                                        animate={{ opacity: isReached ? 1 : 0, scale: isReached ? 1 : 0.4 }}
+                                        transition={{ duration: 0.2, ease: "easeOut" }}
                                     />
 
                                     {item.link ? (
