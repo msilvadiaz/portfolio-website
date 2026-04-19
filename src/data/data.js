@@ -24,7 +24,7 @@ export const skills = [
 ];
 
 export const socials = {
-    github: "https://github.com/sachinbhujel",
+    github: "https://github.com/msilvadiaz",
     linkedin:"https://www.linkedin.com/in/martinsilvadiaz/",
     email: "martin.eduardo.silva.diaz@gmail.com",
     resume: "/Resume_Martin_Silva-Diaz.pdf",
