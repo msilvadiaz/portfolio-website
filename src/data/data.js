@@ -10,10 +10,6 @@ export const seo = {
     keywords: "portfolio, web developer, Next.js, developer portfolio, minimal portfolio",
 }
 
-export const forms = {
-    formspreeUrl: "https://formspree.io/f/<url>",
-}
-
 export const skills = [
     { name: "Html", alt: "html logo", icon: "/html.svg" },
     { name: "Css", alt: "css logo", icon: "/css.svg" },
@@ -84,23 +80,5 @@ export const experience = [
         logo: "/IPEX.png",
         logoAlt: "IPEX logo",
         link: "https://ipexna.com/",
-    },
-];
-
-export const blogs = [
-    {
-        title: "Understanding React Hooks",
-        date: "12/03/2025",
-        link: "#",
-    },
-    {
-        title: "CSS Grid vs Flexbox: When to Use Which",
-        date: "25/12/2024",
-        link: "#",
-    },
-    {
-        title: "Next.js SEO Best Practices",
-        date: "10/07/2024",
-        link: "#",
     },
 ];
