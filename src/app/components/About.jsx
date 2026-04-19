@@ -23,8 +23,7 @@ export default function About() {
               alt="Peru"
               className="inline h-3 mx-1"
             />
-            , with interests in software development 💻, data science 📊, and
-            quantitative finance 📈.
+            , with interests in software development 💻, data science 📊, and finance 📈.
           </p>
         </div>
       </div>
