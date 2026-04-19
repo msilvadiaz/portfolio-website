@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
-@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark;
 }
