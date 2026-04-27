@@ -32,7 +32,7 @@ export const projects = {
             title: "Stock Portfolio Analysis Tool",
             description:
                 "Developed a full-stack portfolio analysis platform that tracks customized portfolios, visualizes performance, computes the efficient frontier and recommends allocations based on risk preferences.",
-            tags: ["React", "TypeScript", "Python Flask"],
+            tags: ["Pandas", "Python Flask", "React"],
             link: "https://portfolio-metrics-analyzer.vercel.app/",
         },
         {
