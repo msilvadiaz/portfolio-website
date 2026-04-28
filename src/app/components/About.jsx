@@ -11,7 +11,7 @@ export default function About() {
         <div className="flex flex-col gap-2">
           <p className="text-base text-base-content/80 m-0 [overflow-wrap:anywhere]">
             I&apos;m Martin, a management engineering student at the University of
-            Waterloo{" "}
+            Waterloo specializing in Artificial Intelligence 🤖{" "}
             <img
               src="/uwlogo.png"
               alt="University of Waterloo"
