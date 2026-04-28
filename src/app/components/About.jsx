@@ -11,19 +11,19 @@ export default function About() {
         <div className="flex flex-col gap-2">
           <p className="text-base text-base-content/80 m-0 [overflow-wrap:anywhere]">
             I&apos;m Martin, a management engineering student at the University of
-            Waterloo specializing in Artificial Intelligence 🤖{" "}
+            Waterloo{" "}
             <img
               src="/uwlogo.png"
               alt="University of Waterloo"
               className="inline h-4 mx-1"
             />
-            , originally from Peru{" "}
+             specializing in Artificial Intelligence 🤖, originally from Peru{" "}
             <img
               src="/peru.svg"
               alt="Peru"
               className="inline h-3 mx-1"
             />
-            , with interests in software development 💻, data science 📊, and finance 📈.
+            , with interests in data science 📊, software development 💻, and finance 📈.
           </p>
         </div>
       </div>
