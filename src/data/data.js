@@ -48,6 +48,15 @@ export const projects = {
 
 export const experience = [
     {
+        role: "Data Science Intern",
+        company: "Scotiabank",
+        description: "Incoming Fall 2026, CI&DA - International Banking",
+        date: "Sep 2026- Dec 2026",
+        logo: "/scotiabank.png",
+        logoAlt: "Scotiabank logo",
+        link: "https://www.scotiawealthmanagement.com/ca/en/about-us.html",
+    },
+    {
         role: "Business Administrator Intern",
         company: "Scotiabank",
         description: "Supported operational tasks and monitored trade activity for Scotia Wealth Management.",
