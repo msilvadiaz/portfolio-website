@@ -17,7 +17,7 @@ export default function About() {
               alt="University of Waterloo"
               className="inline h-4 mx-1"
             />
-            {" "}specializing in Artificial Intelligence 🤖, originally from Peru{" "}
+            {" "}specializing in artificial intelligence 🤖, originally from Peru{" "}
             <img
               src="/peru.svg"
               alt="Peru"

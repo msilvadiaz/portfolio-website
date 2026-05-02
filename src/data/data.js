@@ -54,11 +54,11 @@ export const experience = [
         date: "Sep 2026- Dec 2026",
         logo: "/scotiabank.png",
         logoAlt: "Scotiabank logo",
-        link: "https://www.scotiawealthmanagement.com/ca/en/about-us.html",
+        link: "https://www.scotiabank.com/ca/en/about.html",
     },
     {
         role: "Business Administrator Intern",
-        company: "Scotiabank",
+        company: "Scotia Wealth Management",
         description: "Supported operational tasks and monitored trade activity for Scotia Wealth Management.",
         date: "Jan 2026 – Apr 2026",
         logo: "/scotiabank.png",
