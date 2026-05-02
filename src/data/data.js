@@ -59,7 +59,7 @@ export const experience = [
     {
         role: "Business Administrator Intern",
         company: "Scotia Wealth Management",
-        description: "Automated account documentation workflows & monitored trade activity.",
+        description: "Automated documentation workflows & monitored trade activity.",
         date: "Jan 2026 – Apr 2026",
         logo: "/scotiabank.png",
         logoAlt: "Scotiabank logo",
