@@ -59,7 +59,7 @@ export const experience = [
     {
         role: "Business Administrator Intern",
         company: "Scotia Wealth Management",
-        description: "Supported operational tasks and monitored trade activity for Scotia Wealth Management.",
+        description: "Automated account documentation workflows & monitored trade activity.",
         date: "Jan 2026 – Apr 2026",
         logo: "/scotiabank.png",
         logoAlt: "Scotiabank logo",
@@ -68,7 +68,7 @@ export const experience = [
     {
         role: "Autonomy Software Developer",
         company: "Waterloo Aerial Robotics Group",
-        description: "Built autonomous parameter verification features for drone systems and reliability testing.",
+        description: "Designed parameter verification features for drone systems and reliability testing.",
         date: "Aug 2025 – Dec 2025",
         logo: "/WARG.png",
         logoAlt: "Waterloo Aerial Robotics Group logo",
@@ -77,7 +77,7 @@ export const experience = [
     {
         role: "Product Compliance Intern",
         company: "IPEX by Aliaxis",
-        description: "Developed compliance documentation to support quality assurance for products distributed across Canada.",
+        description: "Developed product quality documentation to support manufacturing opeartions across North America.",
         date: "May 2025 – Aug 2025",
         logo: "/IPEX.png",
         logoAlt: "IPEX logo",
