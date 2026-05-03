@@ -68,7 +68,7 @@ export const experience = [
     {
         role: "Autonomy Software Developer",
         company: "Waterloo Aerial Robotics Group",
-        description: "Designed parameter verification features for drone systems and reliability testing.",
+        description: "Designed parameter verification & data processing system for reliability testing.",
         date: "Aug 2025 – Dec 2025",
         logo: "/WARG.png",
         logoAlt: "Waterloo Aerial Robotics Group logo",
