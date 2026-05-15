@@ -36,6 +36,13 @@ export const projects = {
             link: "https://portfolio-metrics-analyzer.vercel.app/",
         },
         {
+            title: "Loan Risk Machine Learning Model",
+            description:
+                "Built a machine learning model using LendingClub loan data to predict whether loans will be fully paid or charged off, with exploratory analysis, feature engineering, class imbalance handling, and model comparison across Logistic Regression, XGBoost, and Random Forest.",
+            tags: ["Pandas", "Scikit-learn", "XGBoost"],
+            link: "https://github.com/msilvadiaz/Loan-Risk-Machine-Learning-Model",
+        },
+        {
             title: "Financial Budgeting & Planning Tool",
             description:
                 "Developed an Excel VBA budgeting tool that automates expense tracking and visualization, incorporates real-time data validation for reliable calculations.",
