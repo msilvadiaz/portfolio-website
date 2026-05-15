@@ -38,7 +38,7 @@ export const projects = {
         {
             title: "Loan Risk Machine Learning Model",
             description:
-                "Built a machine learning model using LendingClub loan data to predict whether loans will be fully paid or charged off, with exploratory analysis, feature engineering, class imbalance handling, and model comparison across Logistic Regression, XGBoost, and Random Forest.",
+                "Created a loan default prediction workflow using LendingClub data, including exploratory analysis, feature engineering, class imbalance handling, and model comparison across Logistic Regression, XGBoost, and Random Forest.",
             tags: ["Pandas", "Scikit-learn", "XGBoost"],
             link: "https://github.com/msilvadiaz/Loan-Risk-Machine-Learning-Model",
         },
